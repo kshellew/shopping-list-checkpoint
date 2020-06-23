@@ -23,7 +23,8 @@ function shoppingList(){
 
    //crossess item off when check button is pressed 
    $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
-    $(this).closest('li').children('.shopping-item').toggleClass('shopping-item_checked');
+    $(this).closest('.shopping-item-controls').siblings('.shopping-item').toggleClass('shopping-item__checked');
+    //$(this).closest('li').children('.shopping-item').toggleClass('shopping-item_checked');
 });
 }
 $(shoppingList);

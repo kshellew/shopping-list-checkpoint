@@ -26,5 +26,4 @@ function shoppingList(){
     $(this).closest('li').children('.shopping-item').toggleClass('shopping-item_checked');
 });
 }
-
 $(shoppingList);
